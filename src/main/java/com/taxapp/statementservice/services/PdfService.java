@@ -1,8 +1,9 @@
 package com.taxapp.statementservice.services;
 
+import com.taxapp.statementservice.model.PdfFile;
 import org.springframework.web.multipart.MultipartFile;
 
 public interface PdfService {
 
-    void savePdfFile(MultipartFile file);
+    void savePdfFile(PdfFile pdf, MultipartFile file);
 }
