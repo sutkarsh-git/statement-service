@@ -20,14 +20,14 @@ public class PdfFile {
 
     @Lob
     @Column(name = "content")
-    private byte[] content;
+    private Byte[] content;
 
     private MultipartFile multipartFile;
 
     public PdfFile() {
     }
 
-    public PdfFile(Long id, String name, byte[] content) {
+    public PdfFile(Long id, String name, Byte[] content) {
         Id = id;
         this.name = name;
         this.content = content;
