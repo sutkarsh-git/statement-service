@@ -5,5 +5,5 @@ import org.springframework.web.multipart.MultipartFile;
 
 public interface PdfService {
 
-    void savePdfFile(PdfFile pdf, MultipartFile file);
+    void savePdfFile(PdfFile pdf);
 }
