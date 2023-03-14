@@ -3,6 +3,7 @@ package com.taxapp.statementservice.model;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.web.multipart.MultipartFile;
 
 @Getter
 @Setter
@@ -20,6 +21,8 @@ public class PdfFile {
     @Lob
     @Column(name = "content")
     private byte[] content;
+
+    private MultipartFile multipartFile;
 
     public PdfFile() {
     }
