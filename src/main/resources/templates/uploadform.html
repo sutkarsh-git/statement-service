@@ -11,5 +11,6 @@
         <input type="file" name="file" id="file" th:field="*{content}"><br><br>
         <button type="submit">Upload</button>
     </form>
+    <div th:if="${message}" th:text="${message}"></div>
 </body>
 </html>
