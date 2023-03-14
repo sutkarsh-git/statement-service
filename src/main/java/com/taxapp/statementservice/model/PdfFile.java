@@ -22,9 +22,11 @@ public class PdfFile {
     @Column(name = "content")
     private Byte[] content;
 
+    @Transient
     private MultipartFile multipartFile;
 
     public PdfFile() {
+        System.out.println("Creating new PdfFile object");
     }
 
     public PdfFile(Long id, String name, Byte[] content) {
